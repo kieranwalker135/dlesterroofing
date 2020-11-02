@@ -1,5 +1,5 @@
 import React from 'react';
-import QuickContactForm from '../Components/QuickContactForm';
+import ContactForm from '../Contact/index';
 import Slider from '../Components/HomePageSlider/Slider';
 import flatRoof from '../Assets/Images/flatroof.jpg';
 import tiledRoof from '../Assets/Images/tiledroof.jpg';
@@ -100,7 +100,7 @@ export const Home = () => {
                     </div>
                 </div>
             </div>
-            <QuickContactForm />
+            <ContactForm />
         </div>
 
     )
