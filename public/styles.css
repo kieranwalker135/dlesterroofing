@@ -23,6 +23,11 @@ a:hover{color:#F5B711;text-decoration: none;}
 p.lead{font-size:1.223rem;color: #000;font-family: futura-pt, sans-serif;font-weight: 600;font-style: normal;}
 strong{font-weight: 500;color: #004446;}
 
+#siteContent li{list-style: none;}
+#siteContent li::before {float: left;display: inline-table;content: "\f6e3";font-weight: 900;font-family: 'Font Awesome 5 Free';color: #004446;margin-left: -1.7rem;width: 1.3rem;list-style-image: none;}
+#siteContent .cDets ul{padding-left: 0px;text-align: center;}
+#siteContent .cDets li:before{display: none;}
+
 .headerContact ul {text-align:right;padding-left: 0px;}
 .headerContact ul li {display: inline-block;margin-left: 35px;}
 .headerContact ul li:first-child {margin-left: 0px;}
@@ -58,8 +63,9 @@ strong{font-weight: 500;color: #004446;}
 .green-bg {padding: 45px 15px;background: #102A3B;color: #fcfffc;}
 .green-bg h2 {font-size: 3.335rem;}
 .green-bg h2, .green-bg p, .green-bg p.lead, .green-bg ul li a {color: #fcfffc;}
-.green-bg ul {padding-left: 0px;}
-.green-bg ul li {display: inline-block;list-style-image: none;margin-right: 15px;}
+#siteContent .green-bg ul {text-align: left;padding-left: 0px;}
+#siteContent .green-bg ul li:before{display: none;}
+#siteContent .cDets li {display: inline-block;list-style-image: none;margin-right: 15px;}
 .green-bg ul li a:hover{color: #F5B711;}
 
 .btn-main{background: #004446; color: #fcfffc; font-size: 1.278rem; font-weight: 500;transition: .3s ease-in-out all;text-align: center;padding: 7px 25px;border-radius: 3px;}
@@ -72,94 +78,119 @@ strong{font-weight: 500;color: #004446;}
 .sliderCaption {position: absolute;z-index: 999;top: 36%;}
 .sliderCaption h2 {font-size: 3.333rem;}
 
+.innerPageSlide {margin-bottom: 75px;}
+
+#quick_contact form {margin-top: 50px;}
+#quick_contact .form-control {background: none;border: 0px;border-bottom: 1px solid #fcfffc;border-radius: 0px;color: #fcfffc;}
+#quick_contact .form-control:focus {border-bottom: 1px solid #F5B711;box-shadow: none;}
+
+#contactForm {margin-top: 50px;}
+
+#contactForm .form-control {background: none;border: 0px;border-bottom: 1px solid #004446;border-radius: 0px;color: #000;}
+#contactForm .form-control:focus {border-bottom: 1px solid #F5B711;box-shadow: none;}
+
 .siteCreator {text-align: right;}
 
 footer {padding: 15px 0px;}
 
-@media (min-width: 1200px) and (max-width: 1365px) {}
+@media (min-width: 1680px) and (max-width: 1919px) {
+    .sliderCaption h2 {font-size: 2.7rem;}
+}
 
-@media (min-width: 992px) and (max-width:1999px) {}
+@media (min-width: 1440px) and (max-width: 1679px) {
+    .sliderCaption h2 {font-size: 2.6rem;}
+}
 
-@media (min-width: 768px) and (max-width:991px) {}
+@media (min-width:1366px) and (max-width:1439px){
 
-@media (min-width: 576px) and (max-width:767px) {}
+	.sliderCaption h2 {font-size: 2.5rem;}
+}
+
+
+@media (min-width: 1200px) and (max-width: 1365px) {
+    .NavbarItems ul li a {font-size: 18px;}
+    .headerContact ul li a {font-size: 18px;}
+    h1{font-size: 2.3rem;}
+    .sliderCaption h2 {font-size: 2.3rem;}
+    .green-bg h2 {font-size: 2.75rem;}
+}
+
+@media (min-width: 992px) and (max-width:1119px) {
+    .NavbarItems ul li a {font-size: 18px;}
+    .headerContact ul li a {font-size: 18px;}
+    h1{font-size: 2.35rem;}
+    .sliderCaption {top: 46%;}
+    .sliderCaption h2 {font-size: 2.05rem;}
+    .green-bg h2 {font-size: 2.75rem;}
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+    .NavbarItems ul li a {font-size: 16px;padding: 10px 9px;}        
+    .headerContact ul li a {font-size: 13px;}
+    h1{font-size: 1.75rem;}
+    #siteContent .portfolioSlider img {min-height: 500px !important;width: auto !important;}
+    .sliderCaption {top: 46%;}
+    .sliderCaption h2 {font-size: 1.7rem;}
+    .serviceBoxInner h3 {  font-size: 1.15rem;}
+    .green-bg h2 {font-size: 2.45rem;}
+    .btn-main, .btn-second {font-size: 1rem;}
+}
+
+@media (min-width: 576px) and (max-width:767px) {
+    .headerContact { display: none;}
+    .nav-menu li a {font-size: 21px !important;}
+    .NavbarItems ul li a {font-size: 16px;padding: 10px 9px;}        
+    .headerContact ul li a {font-size: 13px;}
+    h1{font-size: 1.75rem;}
+    h1::before, h1::after{display: none;}
+    p.lead {font-size: 1.1rem;}
+    p{font-size: .9rem;}
+    .innerPageSlide {width: auto;height: 210px;}
+    #siteContent .portfolioSlider img {min-height: 500px !important;width: auto !important;}
+    .sliderCaption {top: 46%;}
+    .sliderCaption h2 {font-size: 1.7rem;}
+    .serviceBoxInner h3 {  font-size: 1.15rem;}
+    .green-bg h2 {font-size: 2.45rem;}
+    .btn-main, .btn-second {font-size: 1rem;}
+    footer p {font-size: .8rem;}
+}
 
 @media (max-width:575px) {
-    .siteInformation {
-        text-align: left
-    }
-    .footerSocials {
-        margin-bottom: 15px;
-    }
-    .footerSocials ul {
-        display: block;
-    }
+    .headerContact { display: none;}
+    .nav-menu li a {font-size: 21px !important;}
+    .NavbarItems ul li a {font-size: 16px;padding: 10px 9px;}        
+    .headerContact ul li a {font-size: 13px;}
+    h1{font-size: 1.75rem;}
+    h1::before, h1::after{display: none;}
+    p.lead {font-size: 1.1rem;}
+    p{font-size: .9rem;}
+    .portfolioSlider .img-fluid { max-width: none; height: 500px !important;}
+    .logo {z-index: 999;}
+    .innerPageSlide {width: auto;height: 210px;}
+
+    #siteContent .portfolioSlider img {min-height: 500px !important;width: auto !important;}
+    .sliderCaption {top: 46%;padding: 0px 15px 0px 0px;}
+    .sliderCaption h2 {font-size: 1.7rem;}
+    .serviceBoxInner h3 {  font-size: 1.15rem;}
+    .serviceBox img {width: 100%;}
+    .green-bg h2 {font-size: 2.45rem;}
+    .btn-main, .btn-second {font-size: 1rem;}
+    footer p {font-size: .8rem;}
+    .siteInformation { text-align: left}
+    .footerSocials {margin-bottom: 15px;}
+    .footerSocials ul {display: block;}
+    .siteCopyright {text-align: center;}
+    .footerLogo {margin: 25px 0px;}
+    .siteCreator {text-align: center;}
 }
 
 @media (max-width:767px) {
-    .NavbarItems {
-        margin-bottom: 50px;
-        padding: 10px 15px;
-    }
-    .nav-menu {
-        display: flex;
-        visibility: hidden;
-        flex-direction: column;
-        width: auto;
-        height: 100%;
-        position: fixed;
-        justify-content: center;
-        top: -15%;
-        right: 0;
-        bottom: 0;
-        left: -100%;
-        opacity: 0;
-        transition: all .3s ease-in-out;
-    }
-    .nav-menu.active {
-        visibility: visible;
-        background: #F9F7F3;
-        left: 0;
-        top: -15%;
-        right: 0;
-        bottom: 0;
-        padding: 10px 15px;
-        justify-content: center;
-        opacity: 1;
-        z-index: 1;
-        height: 900px;
-        width: 100%;
-        color: #202446;
-        position: fixed;
-        overflow-y: scroll;
-        transition: 200ms;
-    }
-    .nav-links {
-        font-family: 'Libre Baskerville', serif;
-        text-align: left;
-        padding: 2rem 1.5rem;
-        width: 100%;
-        display: table;
-        color: #202446;
-        font-size: 2.7rem;
-    }
-    .nav-links:hover {
-        background: #202446;
-        color: #F9F7F3;
-    }
-    .menu-icon {
-        display: block;
-        float: right;
-        cursor: pointer;
-        z-index: 99;
-        position: relative;
-        font-size: 1.3rem;
-    }
-    .menu-icon .nav-menu.active {
-        position: fixed;
-        z-index: 999;
-        top: 0;
-        right: 0;
-    }
+    .NavbarItems {margin-bottom: 50px;padding: 10px 15px;}
+    .nav-menu {display: flex;visibility: hidden;flex-direction: column;width: auto;height: 100%;position: fixed;justify-content: center;top: -15%;right: 0;bottom: 0;left: -100%;opacity: 0;transition: all .3s ease-in-out;}
+    .nav-menu.active {margin-bottom: 0px;visibility: visible;background: #F9F7F3;left: 0;top: -15%;right: 0;bottom: 0;padding: 10px 15px;justify-content: center;opacity: 1;z-index: 1;height: 939px;width: 100%;color: #202446;position: fixed;transition: 200ms;}
+    .nav-links {font-family: 'Libre Baskerville', serif;text-align: left;padding: 2rem 1.5rem;width: 100%;display: table;color: #175b2a;font-size: 2.7rem;}
+    .nav-links:hover {background: #175b2a;color: #Ffff;}
+    .menu-icon {display: block;float: right;cursor: pointer;z-index: 99;position: relative;font-size: 1.3rem;}
+    .menu-icon .nav-menu.active {position: fixed;z-index: 999;top: 0;right: 0;}
 }
 

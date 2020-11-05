@@ -19,9 +19,9 @@ class Navigation extends Component {
             <div className="siteNavigation" >
                 <div className="container" >
                     <div className="row align-items-center">
-                        <div className="col-6 col-sm-3 logo" > <a href="/" className="navbar-logo"> <img src={logo} alt="D Lester Roofing, Maintenance and Repairs" class="img-fluid" /></a>
+                        <div className="col-6 col-sm-6 col-md-3 col-lg-3  logo" > <a href="/" className="navbar-logo"> <img src={logo} alt="D Lester Roofing, Maintenance and Repairs" class="img-fluid" /></a>
                         </div>
-                        <div className="col-6 col-sm-4 text-center" >
+                        <div className="col-6 col-sm-6 col-md-4 text-center" >
                             <nav className="NavbarItems" >
                                 <div className="menu-icon"
                                     onClick={this.handleClick} >
@@ -38,7 +38,7 @@ class Navigation extends Component {
                                 </ul>
                             </nav>
                         </div>
-                        <div className="col-12 col-sm-5 headerContact">
+                        <div className="col-12 col-sm-12 col-md-5 headerContact">
                             <ContactDetails />
                         </div>
                     </div>

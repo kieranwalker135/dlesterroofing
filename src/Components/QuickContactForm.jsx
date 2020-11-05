@@ -28,7 +28,7 @@ function QuickContactForm() {
                             <label for="formEmail">Email Address</label>
                             <input id="formEmail" class="form-control" required type="text" name="email" placeholder="Your email"></input>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-4 form-group">
+                        <div class="col-12 col-sm-12 col-md-12 form-group">
                             <label for="formPhone">Phone Number</label>
                             <input id="formPhone" class="form-control" required type="phone" name="phone" placeholder="your phone number"></input>
                         </div>

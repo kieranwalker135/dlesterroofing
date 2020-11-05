@@ -11,7 +11,7 @@ const slideInfo = [
         btnClass:'btn-main btn-block',
         btnLink:'/services', 
         btnText: 'Services',
-        btnLink:'/contact',
+        btnLink2:'/contact',
         btnClass2:'btn-second btn-block',
         btnText2: 'Contact',
 

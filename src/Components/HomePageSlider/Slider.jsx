@@ -24,16 +24,17 @@ export default class AutoPlay extends Component {
                     {slideInfo.map((slideInfo) => {
                         return (
                             <div class="singleSlide">
-                                <img src={slideInfo.image} alt={slideInfo.imgAlt} class={slideInfo.imgClass} />
-                                <div class="container">
-                                    <div class={slideInfo.captionClass}>
+                                <img src={slideInfo.image} alt={slideInfo.imgAlt} class={slideInfo.imgClass} /><div class="container">
+                                <div class={slideInfo.captionClass}>
+                                    
+
                                         <div class="row">
                                             <div class="col-12 col-sm-12 col-md-6">
                                                 <h2>{slideInfo.sliderCaption}</h2>
                                             </div>
-                                            </div>
-                                            <div class="row">
-                                            <div class="col-12 col-sm-4">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-8 col-md-4">
                                                 <div class="row">
                                                     <div class="col-6">
                                                         <a href={slideInfo.btnLink} class={slideInfo.btnClass}>{slideInfo.btnText}</a>
