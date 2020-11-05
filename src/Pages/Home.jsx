@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { Helmet } from 'react-helmet';
-
-import ContactForm from '../Contact/index';
+import CForm from '../Components/Cform';
+// import ContactForm from '../Contact/index';
 import ContactDetails from '../Components/contactDetails';
 import Slider from '../Components/HomePageSlider/Slider';
 import flatRoof from '../Assets/Images/flatroof.jpg';
@@ -121,7 +121,7 @@ export const Home = () => {
                     </div>
                 </div>
                 <div id="quick_contact">
-                    <ContactForm />
+                    <CForm />
                 </div>
             </div>
 

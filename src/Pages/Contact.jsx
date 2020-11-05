@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import CForm from '../Components/Cform';
 import contactHero from '../Assets/Images/contactslide.jpg'
 import ContactForm from '../Contact/index';
 import ContactDetails from '../Components/contactDetails';
@@ -24,7 +25,7 @@ export const Contact = () => {
                     </div>
                 </div>
                 <div id="contactForm">
-                    <ContactForm />
+                <CForm />
                 </div>
             </div>
         </div>
